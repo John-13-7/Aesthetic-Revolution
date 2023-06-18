@@ -1,0 +1,10 @@
+[
+    {
+        "name": "bicep curl",
+        "type": "arms"
+    },
+    {
+        "name": "lat pulldown",
+        "type": "back"
+    }
+]

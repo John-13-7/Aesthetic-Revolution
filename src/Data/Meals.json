@@ -1,0 +1,12 @@
+[
+    {
+        "name": "chicken",
+        "calories": 1000,
+        "type": "breakfast"
+    },
+    {
+        "name": "munchie meal",
+        "calories": 3000,
+        "type": "snack"
+    }
+]
