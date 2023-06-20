@@ -50,8 +50,8 @@ function BMR() {
           onChange={handleChange}
         />
         <button type="submit">Submit</button>
+        <p>BMR: {userBMR}</p>
       </BMRStyles>
-      <p>BMR: {userBMR}</p>
     </div>
   );
 }

@@ -1,10 +1,14 @@
 [
     {
-        "name": "bicep curl",
-        "type": "arms"
+        "name": "arm curl",
+        "type": "biceps"
     },
     {
         "name": "lat pulldown",
         "type": "back"
+    },
+    {
+        "name": "Squats",
+        "type": "legs"
     }
 ]
