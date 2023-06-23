@@ -1,28 +1,14 @@
 [
   {
-    "name": "x",
-    "password": "x",
-    "email": "meow",
-    "calories": "z"
-  },
-  {
-    "name": "a",
-    "password": "$2b$10$EGZZTgLCl4cK4tJ8gXzMse22XXdr6QLu5B6elb6BW5KR8vKPQJh8C",
-    "email": "a@meow.com"
-  },
-  {
-    "name": "a",
-    "password": "$2b$10$Q1oSrZy3cmUd2bh/bnu9oOp3nBSXTnUUbgQx/9u8AZoWnJ/2JWzjC",
-    "email": "a@gmail.org"
-  },
-  {
-    "name": "t",
-    "password": "$2b$10$j/ppKj01A7awLyUEWcp1euADuxEzwkWx/HwR6nZeFQWWekJrDhgLy",
-    "email": "t@gmail.com"
-  },
-  {
     "name": "meow",
-    "password": "$2b$10$UcyFgiukHkWZvf1lgG2olOSndvNEt3zV2xHA4s0sxpi7RsPBeTAE.",
-    "email": "meow@gmail.com"
+    "password": "meow",
+    "email": "meow",
+    "bmr": 0
+  },
+  {
+    "name": "admin",
+    "password": "$2b$10$z1dXSHh7fxFoIiYuN.6pcumeIPHrVctS4EoCbVr7YiEwVHi5O62ty",
+    "email": "admin@gmail.com",
+    "bmr": null
   }
 ]

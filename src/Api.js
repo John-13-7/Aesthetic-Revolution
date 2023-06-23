@@ -94,6 +94,7 @@ app.post("/Users/register", async (req, res) => {
     name: input.name,
     password: hash,
     email: input.email,
+    bmr: 0,
   });
 
   fs.writeFile(
@@ -120,6 +121,41 @@ app.get("/Users/CurrentUser", (req, res) => {
       res.json(current_user);
     }
   });
+});
+
+//update the users BMR
+app.put("/Users/CurrentUser/BMR", (req, res) => {
+  const { username, bmr } = req.body;
+  let userFound = false;
+
+  console.log("username: ", username);
+  console.log("bmr: ", bmr);
+  const updatedBMR = users.map((user) => {
+    if (user.name === username) {
+      userFound = true;
+      return { ...user, bmr: bmr };
+    } else {
+      return user;
+    }
+  });
+
+  if (userFound) {
+    users = updatedBMR;
+    fs.writeFile(
+      "./src/Data/Users.json",
+      JSON.stringify(users, null, 2),
+      "utf8",
+      (err) => {
+        if (err) {
+          console.log("Error writing the logging in file", err);
+        } else {
+          console.log(username, " has logged in");
+        }
+      }
+    );
+  } else {
+    res.status(404).send();
+  }
 });
 
 app.listen(4000, () => {

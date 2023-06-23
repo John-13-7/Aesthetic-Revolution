@@ -1,21 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { LogoutDiv } from "./Styles";
-import { useDispatch } from "react-redux";
-import { logout } from "../Store/userSlice";
 
 function Logout() {
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     fetch("http://localhost:4000/Users/logout", {
       method: "POST",
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
+      .then((response) => {
+        if (response.ok) {
+        } else {
+          console.error("Logout failed");
+        }
       })
       .catch((error) => console.error(error));
-    dispatch(logout());
+    navigate("/");
+    window.location.reload();
   };
 
   return (

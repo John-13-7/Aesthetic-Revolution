@@ -9,15 +9,28 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 //BMR
-export const BMRStyles = styled.form`
+export const BMRDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+`;
+export const BMRForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  background-color: #ffffff;
 
   input[type="text"] {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
+    width: 50px;
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -27,8 +40,42 @@ export const BMRStyles = styled.form`
   }
 
   label {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  button {
+    flex-grow: 1;
+    width: 100px;
+    height: 35px;
     margin-bottom: 10px;
   }
+
+  .active {
+    background-color: #7af8fa;
+  }
+`;
+
+//Questionaire
+export const QDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+export const QQuestions = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(5, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 16px;
 `;
 
 //Nav

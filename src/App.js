@@ -4,11 +4,13 @@ import { GlobalStyle } from "./Components/Styles";
 import Nav from "./Components/Nav";
 import Home from "./Components/Home";
 import BMR from "./Components/BMR";
-import Exercices from "./Components/Exercises";
-import MealPlans from "./Components/MealPlans";
+import Exercises from "./Components/Exercises";
+import Meals from "./Components/Meals";
 import Login from "./Components/Login";
 import Logout from "./Components/Logout";
 import Register from "./Components/Register";
+import Questionaire from "./Components/Questionaire";
+
 function App() {
   return (
     <div>
@@ -17,11 +19,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/BMR" element={<BMR />} />
-        <Route path="/Exercises" element={<Exercices />} />
-        <Route path="/MealPlans" element={<MealPlans />} />
+        <Route path="/Exercises" element={<Exercises />} />
+        <Route path="/Meals" element={<Meals />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Logout" element={<Logout />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/Questionaire" element={<Questionaire />} />
       </Routes>
     </div>
   );

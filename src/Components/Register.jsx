@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { RegisterDiv, RegisterForm } from "./Styles";
+import { useNavigate } from "react-router-dom";
 function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const [confirmEmail, setConfirmEmail] = useState("");
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -54,6 +56,7 @@ function Register() {
         .catch((error) => {
           console.log("Error:", error.message);
         });
+      navigate("/Login");
     } else {
       console.log("User and password do not match");
     }

@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginDiv, LoginForm } from "./Styles";
-import { useDispatch } from "react-redux";
-import { login } from "../Store/userSlice";
 
 function Login() {
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,19 +26,21 @@ function Login() {
         name: username,
         password: password,
       }),
-    }).then((response) => {
-      if (response.ok) {
-        //user logged in
-        dispatch(login());
-        return response.json();
-      } else {
-        console.log("could not login");
-      }
-    });
+    })
+      .then((response) => {
+        if (response.ok) {
+          navigate("/");
+          window.location.reload();
+        } else {
+          console.log("could not login");
+        }
+      })
+      .then((data) => {
+        console.log(data);
+      });
     setPassword("");
     setUsername("");
     e.preventDefault();
-    //check if its true, but for now its going to assume correct input:
   };
   return (
     <LoginDiv>
