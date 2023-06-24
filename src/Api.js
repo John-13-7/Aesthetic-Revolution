@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 app.use(express.json());
 
+//required to load locally
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
@@ -90,11 +91,23 @@ app.post("/Users/register", async (req, res) => {
   const { name, password, email } = req.body;
   const input = { name, password, email };
   const hash = await bcrypt.hash(input.password, 10);
+  //new accounts should have all values set to zero...
   users.push({
     name: input.name,
     password: hash,
     email: input.email,
     bmr: 0,
+    goals: "",
+    bulkpounds: "",
+    cutpounds: "",
+    ismeal: false,
+    foodallergies: [],
+    foodtypes: "",
+    istrain: false,
+    trainingdays: "",
+    trainingfocus: [],
+    mealplan: [],
+    workoutplan: [],
   });
 
   fs.writeFile(
@@ -148,13 +161,71 @@ app.put("/Users/CurrentUser/BMR", (req, res) => {
       (err) => {
         if (err) {
           console.log("Error writing the logging in file", err);
+          res.status(500).send("Error updating user"); // Send a 500 status if there was an error
         } else {
           console.log(username, " has logged in");
+          res.status(200).send("User updated successfully"); // Send a 200 status if everything went fine
         }
       }
     );
   } else {
-    res.status(404).send();
+    res.status(404).send("User not found"); // Send a 404 status if the user was not found
+  }
+});
+
+app.put("/Users/CurrentUser/Questionaire", (req, res) => {
+  const {
+    goals,
+    bulkpounds,
+    cutpounds,
+    ismeal,
+    foodallergies,
+    foodtypes,
+    istrain,
+    trainingdays,
+    trainingfocus,
+    mealplan,
+    workoutplan,
+  } = req.body;
+
+  //there's someone logged in
+  if (current_user !== "") {
+    update_user = users.find((user) => user.name === current_user);
+  } else {
+    return current_user;
+  }
+
+  console.log("current user", current_user);
+
+  if (update_user) {
+    update_user.goals = goals;
+    update_user.bulkpounds = bulkpounds;
+    update_user.cutpounds = cutpounds;
+    update_user.ismeal = ismeal;
+    update_user.foodallergies = foodallergies;
+    update_user.foodtypes = foodtypes;
+    update_user.istrain = istrain;
+    update_user.trainingdays = trainingdays;
+    update_user.trainingfocus = trainingfocus;
+    update_user.mealplan = mealplan;
+    update_user.workoutplan = workoutplan;
+
+    fs.writeFile(
+      "src/Data/Users.json",
+      JSON.stringify(users, null, 2),
+      "utf8",
+      (err) => {
+        if (err) {
+          console.log("Error writing the logging in file", err);
+          res.status(500).send("Error updating user"); // Send a 500 status if there was an error
+        } else {
+          console.log(current_user, " has updated their questionnaire"); // Updated 'username' to 'current_user' since username is not defined in this context
+          res.status(200).send("User updated successfully"); // Send a 200 status if everything went fine
+        }
+      }
+    ); // Closed the writeFile function here
+  } else {
+    res.status(404).send("User not found"); // Send a 404 status if the user was not found
   }
 });
 

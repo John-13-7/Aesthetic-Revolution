@@ -10,6 +10,7 @@ import Login from "./Components/Login";
 import Logout from "./Components/Logout";
 import Register from "./Components/Register";
 import Questionaire from "./Components/Questionaire";
+import QuestionaireConfirmation from "./Components/QuestionaireConfirmation";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route path="/Logout" element={<Logout />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Questionaire" element={<Questionaire />} />
+        <Route
+          path="/Questionaire/confirmation"
+          element={<QuestionaireConfirmation />}
+        />
       </Routes>
     </div>
   );

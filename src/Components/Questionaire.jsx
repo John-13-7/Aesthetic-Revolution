@@ -1,75 +1,168 @@
 import React, { useState, useEffect } from "react";
 import { QDiv, QQuestions } from "./Styles";
+import { useNavigate } from "react-router-dom";
+
 function Questionaire() {
-  const [indexStack, setIndexStack] = useState([0]);
-  const [index, setIndex] = useState(0);
+  const [currentIndex, setIndex] = useState(0);
+  const [enabledButtons, setEnabledButtons] = useState({});
+  const [answers, setAnswers] = useState({
+    goals: "", //bulk or cut
+    bulkPounds: "", //1-2 pounds per week
+    cutPounds: "", //1-2 pounds per week
+    isMeal: false, //true or false whether the user wants a meal plan
+    foodAllergies: [], //can be many or none of allergies
+    foodTypes: "", //can be vegan, keto, etc...
+    isTrain: false, //true or false whether you want a workout plan
+    trainingDays: "", //how many days a week user trains
+    trainingFocus: [], //weakpoints, like legs, chest, back etc
+    mealPlan: [], // build the possible meals
+    workoutPlan: [],
+  });
+  const navigate = useNavigate();
 
-  const [answersStack, setAnswersStack] = useState([
-    {
-      goals: "",
-      bulk: "",
-      cut: "",
-      isMeal: false,
-      meals: [],
-      allergies: [],
-      types: [],
-      days: "",
-      focus: [],
-    },
-  ]);
-
-  const answers = answersStack[answersStack.length - 1];
-
-  const handleAnswer = (value, nextIndex, answerKey) => {
-    const newAnswers = { ...answers, [answerKey]: value };
-    setAnswersStack((prev) => [...prev, newAnswers]);
-    setIndexStack((prev) => [...prev, nextIndex]);
-    setIndex(nextIndex);
+  const handleChange = (value, current, next) => {
+    switch (current) {
+      case 0: //bulk or cut
+        setAnswers({ ...answers, goals: value });
+        setIndex(next);
+        break;
+      case 1: //bulk
+        setAnswers({ ...answers, bulkPounds: value });
+        setIndex(next);
+        break;
+      case 2: //cut
+        setAnswers({ ...answers, cutPounds: value });
+        setIndex(next);
+        break;
+      case 3: //yes or no for meal plan
+        setAnswers({ ...answers, isMeal: value });
+        setIndex(next);
+        break;
+      case 4: //array of allergies or empty
+        if (value === "next") {
+          setIndex(next);
+          break;
+        }
+        if (answers.foodAllergies.includes(value)) {
+          setAnswers({
+            ...answers,
+            foodAllergies: answers.foodAllergies.filter(
+              (item) => item !== value
+            ),
+          });
+          setEnabledButtons({
+            ...enabledButtons,
+            [value]: !enabledButtons[value],
+          });
+        } else {
+          setAnswers({
+            ...answers,
+            foodAllergies: [...answers.foodAllergies, value],
+          });
+          setEnabledButtons({
+            ...enabledButtons,
+            [value]: !enabledButtons[value],
+          });
+        }
+        break;
+      case 5: //vegan, keto...
+        setAnswers({ ...answers, foodTypes: value });
+        setIndex(next);
+        break;
+      case 6: //yes or no for training
+        setAnswers({ ...answers, isTrain: value });
+        setIndex(next);
+        break;
+      case 7: //2,3, or 5 days of training
+        setAnswers({ ...answers, trainingDays: value });
+        setIndex(next);
+        break;
+      case 8: //focus, legs, glutes, chest....
+        if (value === "next") {
+          setIndex(next);
+          break;
+        }
+        if (answers.trainingFocus.includes(value)) {
+          setAnswers({
+            ...answers,
+            trainingFocus: answers.trainingFocus.filter(
+              (item) => item !== value
+            ),
+          });
+          setEnabledButtons({
+            ...enabledButtons,
+            [value]: !enabledButtons[value],
+          });
+        } else {
+          setAnswers({
+            ...answers,
+            trainingFocus: [...answers.trainingFocus, value],
+          });
+          setEnabledButtons({
+            ...enabledButtons,
+            [value]: !enabledButtons[value],
+          });
+        }
+        break;
+      case 9: //thanks
+        break;
+    }
   };
 
-  const handleReturn = () => {
-    setIndexStack((prev) => {
-      if (prev.length === 1) {
-        return prev;
-      }
-
-      const newStack = [...prev];
-      newStack.pop();
-      setIndex(newStack[newStack.length - 1]); // set index here
-      return newStack;
-    });
-
-    setAnswersStack((prev) => {
-      if (prev.length === 1) {
-        return prev;
-      }
-
-      const newStack = [...prev];
-      newStack.pop();
-      return newStack;
-    });
+  const handleSubmit = () => {
+    //write to file
+    fetch("http://localhost:4000/Users/CurrentUser/Questionaire", {
+      method: "PUT",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({
+        goals: answers.goals,
+        bulkpounds: answers.bulkPounds,
+        cutpounds: answers.cutPounds,
+        ismeal: answers.isMeal,
+        foodallergies: answers.foodAllergies,
+        foodtypes: answers.foodTypes,
+        istrain: answers.isTrain,
+        trainingdays: answers.trainingDays,
+        trainingfocus: answers.trainingFocus,
+        mealplan: answers.mealPlan,
+        workoutplan: answers.workoutPlan,
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Failed to submit questionaire");
+        }
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    console.log(answers);
+    //navigate to confirmation page
+    navigate("/Questionaire/confirmation");
   };
-
-  useEffect(() => {
-    console.log(indexStack, answersStack);
-  }, [indexStack, answersStack]);
 
   const renderQuestion = () => {
-    switch (index) {
+    switch (currentIndex) {
       case 0:
         return (
           <QQuestions>
             <h1>Bulking or Cutting</h1>
             <button
               onClick={() => {
-                handleAnswer("bulk", 1, "goals");
+                //value, current index, next index
+                handleChange("bulk", currentIndex, 1);
               }}
             >
               bulk
             </button>
             <button
               onClick={() => {
-                handleAnswer("cut", 2, "goals");
+                handleChange("cut", currentIndex, 2);
               }}
             >
               cut
@@ -84,32 +177,29 @@ function Questionaire() {
             <div>
               <button
                 onClick={() => {
-                  handleAnswer(1, 3, "bulk");
+                  handleChange(1, currentIndex, 3);
                 }}
               >
                 1 pounds
               </button>
               <button
                 onClick={() => {
-                  handleAnswer(2, 3, "bulk");
+                  handleChange(2, currentIndex, 3);
                 }}
               >
                 2 pounds
               </button>
               <button
                 onClick={() => {
-                  handleAnswer(3, 3, "bulk");
+                  handleChange(3, currentIndex, 3);
                 }}
               >
                 3 pounds
               </button>
             </div>
-            <div>
-              <button onClick={() => handleReturn()}>previous</button>
-            </div>
           </QQuestions>
         );
-      //bulking
+      //bulking;
       case 2:
         return (
           <QQuestions>
@@ -117,28 +207,25 @@ function Questionaire() {
             <div>
               <button
                 onClick={() => {
-                  handleAnswer(1, 3, "cut");
+                  handleChange(1, currentIndex, 3);
                 }}
               >
                 1 pounds
               </button>
               <button
                 onClick={() => {
-                  handleAnswer(1.5, 3, "cut");
+                  handleChange(1.5, currentIndex, 3);
                 }}
               >
                 1.5 pounds
               </button>
               <button
                 onClick={() => {
-                  handleAnswer(2, 3, "cut");
+                  handleChange(2, currentIndex, 3);
                 }}
               >
                 2 pounds
               </button>
-            </div>
-            <div>
-              <button onClick={() => handleReturn()}>previous</button>
             </div>
           </QQuestions>
         );
@@ -148,15 +235,12 @@ function Questionaire() {
           <QQuestions>
             <h1>Would you like a meal plan?</h1>
             <div>
-              <button onClick={() => handleAnswer(true, 4, "isMeal")}>
+              <button onClick={() => handleChange(true, currentIndex, 4)}>
                 yes
               </button>
-              <button onClick={() => handleAnswer(false, 6, "isMeal")}>
+              <button onClick={() => handleChange(false, currentIndex, 6)}>
                 no
               </button>
-            </div>
-            <div>
-              <button onClick={() => handleReturn()}>previous</button>
             </div>
           </QQuestions>
         );
@@ -166,17 +250,53 @@ function Questionaire() {
           <QQuestions>
             <div>
               <h1>Do you have any allergies? Select all that apply</h1>
-              <button>nuts</button>
-              <button>shellfish</button>
-              <button>fish</button>
-              <button>eggs</button>
-              <button>milk</button>
-              <button>soy</button>
-              <button>wheat</button>
+              <button
+                className={enabledButtons["nuts"] ? "highlighted" : ""}
+                onClick={() => handleChange("nuts", currentIndex, 5)}
+              >
+                nuts
+              </button>
+              <button
+                className={enabledButtons["shellfish"] ? "highlighted" : ""}
+                onClick={() => handleChange("shellfish", currentIndex, 5)}
+              >
+                shellfish
+              </button>
+              <button
+                className={enabledButtons["fish"] ? "highlighted" : ""}
+                onClick={() => handleChange("fish", currentIndex, 5)}
+              >
+                fish
+              </button>
+              <button
+                className={enabledButtons["eggs"] ? "highlighted" : ""}
+                onClick={() => handleChange("eggs", currentIndex, 5)}
+              >
+                eggs
+              </button>
+              <button
+                className={enabledButtons["milk"] ? "highlighted" : ""}
+                onClick={() => handleChange("milk", currentIndex, 5)}
+              >
+                milk
+              </button>
+              <button
+                className={enabledButtons["soy"] ? "highlighted" : ""}
+                onClick={() => handleChange("soy", currentIndex, 5)}
+              >
+                soy
+              </button>
+              <button
+                className={enabledButtons["wheat"] ? "highlighted" : ""}
+                onClick={() => handleChange("wheat", currentIndex, 5)}
+              >
+                wheat
+              </button>
             </div>
             <div>
-              <button onClick={() => handleReturn()}>prev</button>
-              <button>next</button>
+              <button onClick={() => handleChange("next", currentIndex, 5)}>
+                next
+              </button>
             </div>
           </QQuestions>
         );
@@ -186,15 +306,26 @@ function Questionaire() {
           <QQuestions>
             <div>
               <h1>Any specific types?</h1>
-              <button>vegan</button>
-              <button>vegetarian</button>
-              <button>halal</button>
-              <button>kosher</button>
-              <button>keto</button>
-            </div>
-            <div>
-              <button onClick={() => handleReturn()}>prev</button>
-              <button>next</button>
+              <button onClick={() => handleChange("none", currentIndex, 6)}>
+                none
+              </button>
+              <button onClick={() => handleChange("vegan", currentIndex, 6)}>
+                vegan
+              </button>
+              <button
+                onClick={() => handleChange("vegetarian", currentIndex, 6)}
+              >
+                vegetarian
+              </button>
+              <button onClick={() => handleChange("halal", currentIndex, 6)}>
+                halal
+              </button>
+              <button onClick={() => handleChange("kosher", currentIndex, 6)}>
+                kosher
+              </button>
+              <button onClick={() => handleChange("keto", currentIndex, 6)}>
+                keto
+              </button>
             </div>
           </QQuestions>
         );
@@ -204,11 +335,12 @@ function Questionaire() {
           <QQuestions>
             <div>
               <h1>Would you like a workout plan?</h1>
-              <button>yes</button>
-              <button>no</button>
-            </div>
-            <div>
-              <button>prev</button>
+              <button onClick={() => handleChange("yes", currentIndex, 7)}>
+                yes
+              </button>
+              <button onClick={() => handleChange("no", currentIndex, 9)}>
+                no
+              </button>
             </div>
           </QQuestions>
         );
@@ -218,12 +350,15 @@ function Questionaire() {
           <QQuestions>
             <div>
               <h1>How many days a week do you want to train?</h1>
-              <button>2</button>
-              <button>3</button>
-              <button>5</button>
-            </div>
-            <div>
-              <button>prev</button>
+              <button onClick={() => handleChange(2, currentIndex, 8)}>
+                2
+              </button>
+              <button onClick={() => handleChange(3, currentIndex, 8)}>
+                3
+              </button>
+              <button onClick={() => handleChange(5, currentIndex, 8)}>
+                5
+              </button>
             </div>
           </QQuestions>
         );
@@ -233,23 +368,72 @@ function Questionaire() {
           <QQuestions>
             <div>
               <h1>What are your weak points?</h1>
-              <button>glutes</button>
-              <button>hamstrings</button>
-              <button>calves</button>
-              <button>quads</button>
-              <button>lats</button>
-              <button>shoulders</button>
-              <button>chest</button>
-              <button>biceps</button>
-              <button>triceps</button>
+              <button
+                className={enabledButtons["glutes"] ? "highlighted" : ""}
+                onClick={() => handleChange("glutes", currentIndex, 9)}
+              >
+                glutes
+              </button>
+              <button
+                className={enabledButtons["hamstrings"] ? "highlighted" : ""}
+                onClick={() => handleChange("hamstrings", currentIndex, 9)}
+              >
+                hamstrings
+              </button>
+              <button
+                className={enabledButtons["calves"] ? "highlighted" : ""}
+                onClick={() => handleChange("calves", currentIndex, 9)}
+              >
+                calves
+              </button>
+              <button
+                className={enabledButtons["quads"] ? "highlighted" : ""}
+                onClick={() => handleChange("quads", currentIndex, 9)}
+              >
+                quads
+              </button>
+              <button
+                className={enabledButtons["lats"] ? "highlighted" : ""}
+                onClick={() => handleChange("lats", currentIndex, 9)}
+              >
+                lats
+              </button>
+              <button
+                className={enabledButtons["shoulders"] ? "highlighted" : ""}
+                onClick={() => handleChange("shoulders", currentIndex, 9)}
+              >
+                shoulders
+              </button>
+              <button
+                className={enabledButtons["chest"] ? "highlighted" : ""}
+                onClick={() => handleChange("chest", currentIndex, 9)}
+              >
+                chest
+              </button>
+              <button
+                className={enabledButtons["biceps"] ? "highlighted" : ""}
+                onClick={() => handleChange("biceps", currentIndex, 9)}
+              >
+                biceps
+              </button>
+              <button
+                className={enabledButtons["triceps"] ? "highlighted" : ""}
+                onClick={() => handleChange("triceps", currentIndex, 9)}
+              >
+                triceps
+              </button>
+              <button onClick={() => handleChange("next", currentIndex, 9)}>
+                next
+              </button>
             </div>
           </QQuestions>
         );
-      //glutes, hamstrings, calves, quads, lats, delts, shoulders, chest, biceps, triceps,
+      case 9:
+      //continue
       default:
         return (
           <QQuestions>
-            <button>Submit</button>
+            <button onClick={handleSubmit}>Submit</button>
           </QQuestions>
         );
     }

@@ -1,12 +1,2909 @@
 [
-    {
-        "name": "chicken",
-        "calories": 1000,
-        "type": "breakfast"
-    },
-    {
-        "name": "munchie meal",
-        "calories": 3000,
-        "type": "snack"
-    }
+  {
+    "name": "Veggie Omelette",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": [],
+    "type": ["vegetarian"]
+  },
+  {
+    "name": "Chicken Caesar Salad",
+    "calories": 450,
+    "time": ["lunch"],
+    "allergies": [],
+    "type": []
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "calories": 600,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": []
+  },
+  {
+    "name": "Banana Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": [],
+    "type": ["vegan"]
+  },
+  {
+    "name": "Avocado Toast",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": [],
+    "type": ["vegetarian"]
+  },
+  {
+    "name": "Caprese Salad",
+    "calories": 200,
+    "time": ["lunch"],
+    "allergies": [],
+    "type": ["vegetarian"]
+  },
+  {
+    "name": "Grilled Salmon",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": []
+  },
+  {
+    "name": "Trail Mix",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": [],
+    "type": []
+  },
+  {
+    "name": "Pancakes",
+    "calories": 450,
+    "time": ["breakfast"],
+    "allergies": [],
+    "type": []
+  },
+  {
+    "name": "Quinoa Salad",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": [],
+    "type": ["vegan"]
+  },
+  {
+    "name": "Chicken Stir-Fry",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": []
+  },
+
+  {
+    "name": "Hummus with Veggies",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["nuts"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Eggs Benedict",
+    "calories": 550,
+    "time": ["breakfast"],
+    "allergies": ["gluten"],
+    "type": []
+  },
+
+  {
+    "name": "Mediterranean Wrap",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": [],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Grilled Chicken Breast",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": []
+  },
+
+  {
+    "name": "Fruit Salad",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": [],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "French Toast",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["dairy"],
+    "type": []
+  },
+
+  {
+    "name": "Greek Salad",
+    "calories": 300,
+    "time": ["lunch"],
+    "allergies": [],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Beef Tacos",
+    "calories": 550,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": []
+  },
+
+  {
+    "name": "Yogurt Parfait",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["nuts"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Berry Chia Pudding",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Quinoa Breakfast Bowl",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Tomato Basil Soup",
+    "calories": 250,
+    "time": ["lunch"],
+    "allergies": ["nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Sweet Potato Black Bean Chili",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Cauliflower Fried Rice",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Roasted Chickpea Snack",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Blueberry Oatmeal Muffins",
+    "calories": 180,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Green Smoothie Bowl",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Caprese Quinoa Salad",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Vegetable Stir-Fry",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Hummus Wrap",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Vegetable Soup",
+    "calories": 200,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Fruit Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Veggie Burger",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Mango Salsa",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Oatmeal with Berries",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Greek Yogurt Parfait",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Vegetable Curry",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Peanut Butter Energy Balls",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Eggless Pancakes",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Mediterranean Pasta Salad",
+    "calories": 300,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Black Bean Tacos",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Fruit Salad with Coconut Yogurt",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Veggie Omelette",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Chicken Caesar Salad",
+    "calories": 450,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Spaghetti Bolognese",
+    "calories": 600,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Banana Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Avocado Toast",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Caprese Salad",
+    "calories": 200,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Grilled Salmon",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Trail Mix",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Pancakes",
+    "calories": 450,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Quinoa Salad",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Chicken Stir-Fry",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Hummus with Veggies",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Eggs Benedict",
+    "calories": 550,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Mediterranean Wrap",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Grilled Chicken Breast",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Fruit Salad",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "French Toast",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Greek Salad",
+    "calories": 300,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Beef Tacos",
+    "calories": 550,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Yogurt Parfait",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["nuts", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Cucumber Avocado Rolls",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Egg Fried Rice",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Vegetable Spring Rolls",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Peanut Butter Banana Toast",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Caprese Skewers",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Baked Chicken Parmesan",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Rice Cakes with Avocado",
+    "calories": 300,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Omelette Muffins",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Greek Yogurt with Berries",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Pesto Pasta",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Bruschetta",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Stuffed Zucchini Boats",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Peanut Butter Banana Smoothie",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Cauliflower Soup",
+    "calories": 200,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Spinach Salad with Cranberries",
+    "calories": 250,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Roasted Vegetables",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Chocolate Banana Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Cucumber Salad",
+    "calories": 150,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Vegetable Quesadillas",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Apple Slices with Almond Butter",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Egg Salad Sandwich",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Tomato Cucumber Salad",
+    "calories": 150,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Mushroom Risotto",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Mixed Berry Parfait",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+  {
+    "name": "Avocado Hummus Toast",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Quinoa Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Vegetable Noodle Stir-Fry",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Roasted Chickpeas",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Blueberry Muffins",
+    "calories": 180,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Tofu Scramble",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Greek Yogurt with Honey",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+  {
+    "name": "Vegetable Lasagna",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Fruit Smoothie Bowl",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Cucumber Avocado Salad",
+    "calories": 150,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Black Bean Soup",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Apple Cinnamon Oatmeal",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Quinoa Buddha Bowl",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Tofu Stir-Fry",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Roasted Almonds",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Spinach and Feta Stuffed Mushrooms",
+    "calories": 300,
+    "time": ["appetizer"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Chickpea Salad",
+    "calories": 250,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Peanut Butter Banana Wrap",
+    "calories": 400,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Zucchini Noodles with Pesto",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Mixed Berry Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Tomato Mozzarella Skewers",
+    "calories": 200,
+    "time": ["appetizer"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Chia Seed Pudding",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Roasted Brussels Sprouts",
+    "calories": 200,
+    "time": ["side dish"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Lentil Soup",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Mango Salsa",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Quinoa Porridge",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Cauliflower Tacos",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Banana Bread",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Vegetable Wrap",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Mediterranean Couscous Salad",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Soba Noodle Salad",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Chickpea Curry",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+  {
+    "name": "Quinoa Breakfast Bowl",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian", "keto"]
+  },
+
+  {
+    "name": "Tomato Basil Soup",
+    "calories": 250,
+    "time": ["lunch"],
+    "allergies": ["nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Sweet Potato Black Bean Chili",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan", "keto"]
+  },
+
+  {
+    "name": "Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian", "keto"]
+  },
+
+  {
+    "name": "Cauliflower Fried Rice",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian", "keto"]
+  },
+
+  {
+    "name": "Roasted Chickpea Snack",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Blueberry Oatmeal Muffins",
+    "calories": 180,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Green Smoothie Bowl",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan", "keto"]
+  },
+
+  {
+    "name": "Caprese Quinoa Salad",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Vegetable Stir-Fry",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Hummus Wrap",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Vegetable Soup",
+    "calories": 200,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Fruit Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Veggie Burger",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Mango Salsa",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Oatmeal with Berries",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Greek Yogurt Parfait",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Vegetable Curry",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Peanut Butter Energy Balls",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Eggless Pancakes",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Mediterranean Pasta Salad",
+    "calories": 300,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Black Bean Tacos",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Fruit Salad with Coconut Yogurt",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Veggie Omelette",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Chicken Caesar Salad",
+    "calories": 450,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Spaghetti Bolognese",
+    "calories": 600,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Banana Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Avocado Toast",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Caprese Salad",
+    "calories": 200,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Grilled Salmon",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Trail Mix",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Pancakes",
+    "calories": 450,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Quinoa Salad",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Chicken Stir-Fry",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Hummus with Veggies",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Eggs Benedict",
+    "calories": 550,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Mediterranean Wrap",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Grilled Chicken Breast",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Fruit Salad",
+    "calories": 150,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "French Toast",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Greek Salad",
+    "calories": 300,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Beef Tacos",
+    "calories": 550,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Yogurt Parfait",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["nuts", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Cucumber Avocado Rolls",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Egg Fried Rice",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Vegetable Spring Rolls",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Tofu Scramble Breakfast Burrito",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Peanut Butter Banana Toast",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Caprese Skewers",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Baked Chicken Parmesan",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Rice Cakes with Avocado",
+    "calories": 300,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Omelette Muffins",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Greek Yogurt with Berries",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Pesto Pasta",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Bruschetta",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Stuffed Zucchini Boats",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Peanut Butter Banana Smoothie",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Cauliflower Soup",
+    "calories": 200,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Spinach Salad with Cranberries",
+    "calories": 250,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Roasted Vegetables",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Chocolate Banana Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Cucumber Salad",
+    "calories": 150,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Vegetable Quesadillas",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Apple Slices with Almond Butter",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Egg Salad Sandwich",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Tomato Cucumber Salad",
+    "calories": 150,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Mushroom Risotto",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Mixed Berry Parfait",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+  {
+    "name": "Avocado Hummus Toast",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Black Bean Burrito Bowl",
+    "calories": 400,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Quinoa Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Vegetable Noodle Stir-Fry",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Roasted Chickpeas",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Blueberry Muffins",
+    "calories": 180,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Tofu Scramble",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Greek Yogurt with Honey",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": []
+  },
+  {
+    "name": "Vegetable Lasagna",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Fruit Smoothie Bowl",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Cucumber Avocado Salad",
+    "calories": 150,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Black Bean Soup",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Mango Smoothie",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Egg Salad",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Mediterranean Salad",
+    "calories": 300,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Salmon with Lemon Dill Sauce",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chocolate Protein Balls",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Scrambled Tofu Wrap",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "wheat"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Quinoa Salad with Roasted Vegetables",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Spaghetti Aglio e Olio",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Fruit Kabobs",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Avocado Toast with Poached Egg",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Tabbouleh Salad",
+    "calories": 300,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Chicken Caesar Wrap",
+    "calories": 450,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Quinoa Breakfast Bowl",
+    "calories": 400,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian", "keto"]
+  },
+
+  {
+    "name": "Tomato Basil Soup",
+    "calories": 250,
+    "time": ["lunch"],
+    "allergies": ["nuts", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Sweet Potato Black Bean Chili",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan", "keto"]
+  },
+
+  {
+    "name": "Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian", "keto"]
+  },
+
+  {
+    "name": "Cauliflower Fried Rice",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian", "keto"]
+  },
+
+  {
+    "name": "Roasted Chickpea Snack",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan"]
+  },
+
+  {
+    "name": "Blueberry Oatmeal Muffins",
+    "calories": 180,
+    "time": ["snack"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegetarian"]
+  },
+
+  {
+    "name": "Green Smoothie Bowl",
+    "calories": 300,
+    "time": ["breakfast"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": ["vegan", "keto"]
+  },
+  {
+    "name": "Grilled Chicken Breast with Brown Rice and Broccoli",
+    "calories": 450,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Salmon with Quinoa and Steamed Asparagus",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Meatballs with Whole Wheat Pasta and Spinach",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Beef Stir-Fry with Brown Rice",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Salad with Mixed Greens and Veggies",
+    "calories": 300,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Steak with Sweet Potato Mash and Steamed Broccoli",
+    "calories": 550,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Oven-Roasted Chicken Thighs with Quinoa and Roasted Brussels Sprouts",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Tuna Salad Wrap with Whole Wheat Tortilla",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Quinoa and Steamed Asparagus",
+    "calories": 300,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Shrimp Skewers with Brown Rice and Grilled Zucchini",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken and Vegetable Stir-Fry with Quinoa",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Chili with Black Beans and Brown Rice",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Salmon with Quinoa and Roasted Vegetables",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Breast with Sweet Potato Mash and Steamed Green Beans",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Chicken Drumsticks with Brown Rice and Steamed Broccoli",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Steak with Quinoa Salad",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Caesar Salad with Whole Wheat Croutons",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Teriyaki Salmon with Quinoa and Steamed Asparagus",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Veggie Stir-Fry with Brown Rice",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Skewers with Quinoa and Grilled Zucchini",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Brown Rice and Roasted Brussels Sprouts",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Salad with Mixed Greens and Veggies",
+    "calories": 300,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Stir-Fry with Quinoa",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Shrimp Salad with Mixed Greens and Veggies",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Quinoa Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Breast with Sweet Potato Mash and Steamed Green Beans",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Salmon and Quinoa Salad with Mixed Greens",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Meatloaf with Baked Sweet Potato Fries",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Caesar Wrap",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Quinoa Salad",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken and Vegetable Stir-Fry with Brown Rice",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Chili with Black Beans and Quinoa",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Salmon with Sweet Potato Mash and Steamed Asparagus",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Breast with Quinoa and Roasted Vegetables",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Chicken Drumsticks with Brown Rice and Steamed Broccoli",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Steak with Quinoa Salad",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Caesar Salad with Whole Wheat Croutons",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Teriyaki Salmon with Quinoa and Steamed Asparagus",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Veggie Stir-Fry with Brown Rice",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Skewers with Quinoa and Grilled Zucchini",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Brown Rice and Roasted Brussels Sprouts",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Salad with Mixed Greens and Veggies",
+    "calories": 300,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Stir-Fry with Quinoa",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Shrimp Salad with Mixed Greens and Veggies",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Quinoa Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Breast with Sweet Potato Mash and Steamed Green Beans",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Salmon and Quinoa Salad with Mixed Greens",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Meatloaf with Baked Sweet Potato Fries",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Caesar Wrap",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Quinoa Salad",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken and Vegetable Stir-Fry with Brown Rice",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Chili with Black Beans and Quinoa",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Salmon with Sweet Potato Mash and Steamed Asparagus",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Breast with Quinoa and Roasted Vegetables",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Chicken Drumsticks with Brown Rice and Steamed Broccoli",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Steak with Quinoa Salad",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Caesar Salad with Whole Wheat Croutons",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Teriyaki Salmon with Quinoa and Steamed Asparagus",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Veggie Stir-Fry with Brown Rice",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Skewers with Quinoa and Grilled Zucchini",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Brown Rice and Roasted Brussels Sprouts",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Salad with Mixed Greens and Veggies",
+    "calories": 300,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Stir-Fry with Quinoa",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Shrimp Salad with Mixed Greens and Veggies",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Quinoa Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Breast with Sweet Potato Mash and Steamed Green Beans",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Salmon and Quinoa Salad with Mixed Greens",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Meatloaf with Baked Sweet Potato Fries",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Caesar Wrap",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Quinoa Salad",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken and Vegetable Stir-Fry with Brown Rice",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Chili with Black Beans and Quinoa",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Salmon with Sweet Potato Mash and Steamed Asparagus",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Breast with Quinoa and Roasted Vegetables",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Chicken Drumsticks with Brown Rice and Steamed Broccoli",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Steak with Quinoa Salad",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Caesar Salad with Whole Wheat Croutons",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Teriyaki Salmon with Quinoa and Steamed Asparagus",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Veggie Stir-Fry with Brown Rice",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Skewers with Quinoa and Grilled Zucchini",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Brown Rice and Roasted Brussels Sprouts",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Salad with Mixed Greens and Veggies",
+    "calories": 300,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Stir-Fry with Quinoa",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Shrimp Salad with Mixed Greens and Veggies",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Quinoa Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Breast with Sweet Potato Mash and Steamed Green Beans",
+    "calories": 350,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Salmon and Quinoa Salad with Mixed Greens",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Meatloaf with Baked Sweet Potato Fries",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Caesar Wrap",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Cod with Quinoa Salad",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["shellfish", "nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken and Vegetable Stir-Fry with Brown Rice",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Ground Turkey Chili with Black Beans and Quinoa",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Salmon with Sweet Potato Mash and Steamed Asparagus",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey Breast with Quinoa and Roasted Vegetables",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Baked Chicken Drumsticks with Brown Rice and Steamed Broccoli",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Steak with Quinoa Salad",
+    "calories": 500,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Chicken Caesar Salad with Whole Wheat Croutons",
+    "calories": 350,
+    "time": ["lunch"],
+    "allergies": ["fish", "shellfish", "nuts", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Teriyaki Salmon with Quinoa and Steamed Asparagus",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["nuts", "milk", "soy", "wheat", "eggs"],
+    "type": []
+  },
+
+  {
+    "name": "Turkey and Veggie Stir-Fry with Brown Rice",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["fish", "shellfish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+
+  {
+    "name": "Grilled Chicken Skewers with Quinoa and Grilled Zucchini",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["fish", "nuts", "milk", "soy", "wheat"],
+    "type": []
+  },
+  {
+    "name": "Baked Chicken Thighs with Cauliflower Rice",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Spinach and Feta Stuffed Chicken Breast",
+    "calories": 380,
+    "time": ["lunch", "dinner"],
+    "allergies": ["milk"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Avocado and Bacon Salad",
+    "calories": 320,
+    "time": ["lunch"],
+    "allergies": ["soy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Broccoli Cheese Soup",
+    "calories": 250,
+    "time": ["dinner"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Grilled Steak with Garlic Butter",
+    "calories": 550,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Cauliflower Crust Pizza",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["milk"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Coconut Shrimp",
+    "calories": 320,
+    "time": ["dinner"],
+    "allergies": ["gluten", "dairy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Zucchini Noodles with Pesto Sauce",
+    "calories": 280,
+    "time": ["lunch", "dinner"],
+    "allergies": ["nuts"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Cauliflower Fried Rice",
+    "calories": 320,
+    "time": ["dinner"],
+    "allergies": ["soy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Baked Salmon with Lemon and Dill",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Cheeseburger Lettuce Wraps",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Chocolate Avocado Mousse",
+    "calories": 220,
+    "time": ["snack"],
+    "allergies": ["dairy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Stuffed Portobello Mushrooms",
+    "calories": 280,
+    "time": ["lunch", "dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Cauliflower Mac and Cheese",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Grilled Chicken with Asparagus",
+    "calories": 420,
+    "time": ["lunch", "dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Egg Muffins",
+    "calories": 250,
+    "time": ["breakfast"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Buffalo Cauliflower Bites",
+    "calories": 280,
+    "time": ["snack"],
+    "allergies": ["dairy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Baked Cod with Lemon and Garlic",
+    "calories": 320,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Taco Salad",
+    "calories": 380,
+    "time": ["lunch", "dinner"],
+    "allergies": ["gluten", "dairy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Cauliflower Rice Stir-Fry",
+    "calories": 300,
+    "time": ["lunch", "dinner"],
+    "allergies": ["soy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Cheesecake Fat Bombs",
+    "calories": 200,
+    "time": ["snack"],
+    "allergies": ["nuts"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Zucchini and Sausage Skillet",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": ["gluten", "dairy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Broccoli Cheddar Soup",
+    "calories": 320,
+    "time": ["lunch", "dinner"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Baked Lemon Herb Chicken Thighs",
+    "calories": 380,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Avocado Brownies",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Cauliflower Mash",
+    "calories": 200,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Chicken Alfredo",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Grilled Shrimp Skewers with Garlic Butter",
+    "calories": 320,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Sausage and Egg Breakfast Casserole",
+    "calories": 380,
+    "time": ["breakfast"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Pizza Bites",
+    "calories": 280,
+    "time": ["snack"],
+    "allergies": ["gluten", "dairy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Baked Garlic Parmesan Salmon",
+    "calories": 350,
+    "time": ["dinner"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Stuffed Bell Peppers",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Cauliflower Crust Grilled Cheese",
+    "calories": 320,
+    "time": ["lunch", "dinner"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Peanut Butter Fat Bombs",
+    "calories": 220,
+    "time": ["snack"],
+    "allergies": ["nuts"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Beef and Broccoli Stir-Fry",
+    "calories": 380,
+    "time": ["dinner"],
+    "allergies": ["soy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Creamy Garlic Parmesan Chicken",
+    "calories": 420,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Chocolate Chip Cookies",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Cauliflower Fried Rice",
+    "calories": 300,
+    "time": ["lunch", "dinner"],
+    "allergies": ["soy"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Baked Lemon Garlic Butter Chicken Drumsticks",
+    "calories": 380,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Zucchini Lasagna",
+    "calories": 400,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Grilled Lemon Herb Chicken Skewers",
+    "calories": 320,
+    "time": ["lunch", "dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Blueberry Pancakes",
+    "calories": 350,
+    "time": ["breakfast"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Parmesan Crisps",
+    "calories": 280,
+    "time": ["snack"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Baked Garlic Butter Shrimp",
+    "calories": 320,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Cauliflower Rice Burrito Bowl",
+    "calories": 400,
+    "time": ["lunch", "dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Cauliflower Buffalo Wings",
+    "calories": 300,
+    "time": ["snack"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Chocolate Peanut Butter Cups",
+    "calories": 220,
+    "time": ["snack"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Chicken Caesar Salad",
+    "calories": 380,
+    "time": ["lunch", "dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Lemon Garlic Butter Salmon",
+    "calories": 450,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Peanut Butter Cookies",
+    "calories": 250,
+    "time": ["snack"],
+    "allergies": ["gluten"],
+    "type": ["keto"]
+  },
+  {
+    "name": "Keto Creamy Mushroom Soup",
+    "calories": 320,
+    "time": ["lunch", "dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  },
+  {
+    "name": "Baked Garlic Butter Chicken Thighs",
+    "calories": 380,
+    "time": ["dinner"],
+    "allergies": [],
+    "type": ["keto"]
+  }
 ]

@@ -64,18 +64,38 @@ export const BMRForm = styled.form`
 //Questionaire
 export const QDiv = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 `;
 export const QQuestions = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* changed from center to column to align items vertically */
   padding: 20px;
   box-shadow: 0 2px 4px rgba(5, 0, 0, 0.5);
   background-color: #fff;
   border-radius: 16px;
+
+  button {
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+  .highlighted {
+    background-color: yellow;
+  }
 `;
 
 //Nav

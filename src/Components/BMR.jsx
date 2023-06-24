@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BMRDiv, BMRForm } from "./Styles";
+import { useNavigate } from "react-router-dom";
 function BMR() {
   const [user, setUser] = useState("");
   const [input, setInput] = useState({
@@ -16,6 +17,7 @@ function BMR() {
   const [isLB, setIsLB] = useState(false);
   const [isKG, setIsKG] = useState(false);
   const [userBMR, setUserBMR] = useState("");
+  const navigate = useNavigate();
 
   const handleButtonChange = (value) => {
     switch (value) {
@@ -112,13 +114,17 @@ function BMR() {
     })
       .then((response) => {
         if (response.ok) {
-          console.log(response);
+          return response.json();
         } else {
           console.log("could not login");
+          throw new Error("Failed to update user."); // Reject the promise
         }
       })
       .then((data) => {
         console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error); // This handles any errors
       });
   };
 

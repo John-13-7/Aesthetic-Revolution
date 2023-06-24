@@ -1,14 +1,38 @@
 [
   {
     "name": "meow",
-    "password": "meow",
-    "email": "meow",
-    "bmr": 0
+    "password": "$2b$10$.QXF2DmLMp91gN9cMug/gurAzMvtyXtoAjBmZUwK0T6rCrA2CuYdC",
+    "email": "meow@gmail.com",
+    "bmr": 0,
+    "goals": "",
+    "bulkpounds": "",
+    "cutpounds": "",
+    "ismeal": false,
+    "foodallergies": [],
+    "foodtypes": "",
+    "istrain": false,
+    "trainingdays": "",
+    "trainingfocus": [],
+    "mealplan": [],
+    "workoutplan": []
   },
   {
-    "name": "admin",
-    "password": "$2b$10$z1dXSHh7fxFoIiYuN.6pcumeIPHrVctS4EoCbVr7YiEwVHi5O62ty",
-    "email": "admin@gmail.com",
-    "bmr": null
+    "name": "yes",
+    "password": "$2b$10$08/zTFpfdg/sOQLoYizqfu0vX34U1.pOxAhrqWWckSWHdU5Yv0Uju",
+    "email": "yes@gmail.com",
+    "bmr": 799,
+    "goals": "cut",
+    "bulkpounds": "",
+    "cutpounds": 2,
+    "ismeal": true,
+    "foodallergies": [],
+    "foodtypes": "none",
+    "istrain": "yes",
+    "trainingdays": 5,
+    "trainingfocus": [
+      "triceps"
+    ],
+    "mealplan": [],
+    "workoutplan": []
   }
 ]
