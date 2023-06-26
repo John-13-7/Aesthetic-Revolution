@@ -70,14 +70,14 @@ export const QDiv = styled.div`
 `;
 export const QQuestions = styled.div`
   display: flex;
-  flex-direction: column; /* changed from center to column to align items vertically */
+  flex-direction: column;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(5, 0, 0, 0.5);
   background-color: #fff;
   border-radius: 16px;
 
   button {
-    background-color: #000000; /* Green */
+    background-color: #000000;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -95,6 +95,33 @@ export const QQuestions = styled.div`
   }
   .highlighted {
     background-color: yellow;
+  }
+`;
+
+//Questionaire Confirmation Page
+export const QConfirmationDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+export const QConfirmatonList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    margin-right: 10px;
+    display: inline;
   }
 `;
 

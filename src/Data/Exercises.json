@@ -1,14 +1,583 @@
 [
-    {
-        "name": "arm curl",
-        "type": "biceps"
-    },
-    {
-        "name": "lat pulldown",
-        "type": "back"
-    },
-    {
-        "name": "Squats",
-        "type": "legs"
-    }
+  {
+    "name": "Arm Curls",
+    "muscle": ["Biceps"],
+    "repetitions": "6-12",
+    "instructions": "Yes you big bicep son",
+    "image": "./workout_images/arm_curls.jpg"
+  },
+  {
+    "name": "Lat Pulldowns",
+    "muscle": ["Back"],
+    "repetitions": "4-20",
+    "instructions": "Muscle go boom, pull the machine to pull boom",
+    "image": "./workout_images/lat_pulldowns.jpg"
+  },
+  {
+    "name": "Barbell Squats",
+    "muscle": ["Legs"],
+    "repetitions": "6-9",
+    "instructions": "Ass to grass squat, until your boxers tear up",
+    "image": "./workout_images/barbell_squats.jpg"
+  },
+  {
+    "name": "Bench Press",
+    "muscle": ["Chest"],
+    "repetitions": "8-12",
+    "instructions": "Lie on a flat bench, grip the bar slightly wider than shoulder-width, lower it to your chest, and press it back up.",
+    "image": "./workout_images/bench_press.jpg"
+  },
+  {
+    "name": "Deadlifts",
+    "muscle": ["Back", "Glutes", "Hamstrings"],
+    "repetitions": "4-6",
+    "instructions": "Stand with feet shoulder-width apart, bend at the hips and knees, grip the bar, keep your back straight, and lift the bar by extending your hips and knees.",
+    "image": "./workout_images/deadlifts.jpg"
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "muscle": ["Shoulders"],
+    "repetitions": "8-12",
+    "instructions": "Hold dumbbells at shoulder level, palms facing forward, press them upward until arms are extended overhead, and lower them back down.",
+    "image": "./workout_images/dumbbell_shoulder_press.jpg"
+  },
+  {
+    "name": "Lunges",
+    "muscle": ["Quadriceps", "Hamstrings", "Glutes"],
+    "repetitions": "10-15",
+    "instructions": "Step forward with one leg, lower your body until your front knee is at a 90-degree angle, push back up, and repeat with the other leg.",
+    "image": "./workout_images/lunges.jpg"
+  },
+  {
+    "name": "Pull-ups",
+    "muscle": ["Back", "Biceps"],
+    "repetitions": "6-10",
+    "instructions": "Hang from a bar with palms facing away, pull your body up until your chin is above the bar, and lower yourself back down.",
+    "image": "./workout_images/pull-ups.jpg"
+  },
+  {
+    "name": "Plank",
+    "muscle": ["Core"],
+    "repetitions": "30-60 seconds",
+    "instructions": "Get into a push-up position, rest on your forearms, keep your body straight, and hold the position for the prescribed time.",
+    "image": "./workout_images/plank.jpg"
+  },
+  {
+    "name": "Russian Twists",
+    "muscle": ["Obliques"],
+    "repetitions": "12-15",
+    "instructions": "Sit on the floor, lean back slightly, lift your feet off the ground, and twist your torso from side to side, touching the floor on each side.",
+    "image": "./workout_images/russian_twists.jpg"
+  },
+  {
+    "name": "Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "15-20",
+    "instructions": "Stand on the edge of a step, raise your heels as high as possible, pause, and lower your heels back down.",
+    "image": "./workout_images/calf_raises.jpg"
+  },
+  {
+    "name": "Tricep Dips",
+    "muscle": ["Triceps"],
+    "repetitions": "8-12",
+    "instructions": "Position your hands shoulder-width apart on a bench, slide your butt off the front with your legs extended, lower your body by bending your elbows, and push back up.",
+    "image": "./workout_images/tricep_dips.jpg"
+  },
+  {
+    "name": "Bicycle Crunches",
+    "muscle": ["Abdominals"],
+    "repetitions": "15-20",
+    "instructions": "Lie on your back, lift your knees and feet off the ground, bring your left knee towards your right elbow while extending your right leg, and alternate sides.",
+    "image": "./workout_images/bicycle_crunches.jpg"
+  },
+  {
+    "name": "Hammer Curls",
+    "muscle": ["Biceps"],
+    "repetitions": "8-12",
+    "instructions": "Hold dumbbells with a neutral grip, curl them up while keeping your palms facing each other, and slowly lower them back down.",
+    "image": "./workout_images/hammer_curls.jpg"
+  },
+  {
+    "name": "Seated Rows",
+    "muscle": ["Back"],
+    "repetitions": "10-15",
+    "instructions": "Sit on a rowing machine, grab the handles with an overhand grip, pull them towards your torso, and squeeze your shoulder blades together.",
+    "image": "./workout_images/seated_rows.jpg"
+  },
+  {
+    "name": "Leg Press",
+    "muscle": ["Legs"],
+    "repetitions": "8-12",
+    "instructions": "Sit on a leg press machine, place your feet on the platform, push the platform away by extending your legs, and then bend your knees to return to the starting position.",
+    "image": "./workout_images/leg_press.jpg"
+  },
+  {
+    "name": "Incline Bench Press",
+    "muscle": ["Chest", "Shoulders"],
+    "repetitions": "6-10",
+    "instructions": "Lie on an incline bench, grip the bar slightly wider than shoulder-width, lower it to your upper chest, and press it back up.",
+    "image": "./workout_images/incline_bench_press.jpg"
+  },
+  {
+    "name": "Romanian Deadlifts",
+    "muscle": ["Back", "Hamstrings"],
+    "repetitions": "8-12",
+    "instructions": "Hold a barbell with an overhand grip, stand with feet hip-width apart, hinge at the hips while keeping your back straight, lower the barbell by moving your hips back, and return to the starting position.",
+    "image": "./workout_images/romanian_deadlifts.jpg"
+  },
+  {
+    "name": "Arnold Press",
+    "muscle": ["Shoulders"],
+    "repetitions": "10-15",
+    "instructions": "Hold dumbbells at shoulder level, palms facing your body, press them upward while rotating your palms to face forward, and lower them back down while rotating your palms back.",
+    "image": "./workout_images/arnold_press.jpg"
+  },
+  {
+    "name": "Step-ups",
+    "muscle": ["Quadriceps", "Glutes"],
+    "repetitions": "12-15",
+    "instructions": "Stand in front of a step or platform, step onto it with one foot, push through your heel to lift your body up, and then step back down and repeat with the other leg.",
+    "image": "./workout_images/step-ups.jpg"
+  },
+  {
+    "name": "Chin-ups",
+    "muscle": ["Back", "Biceps"],
+    "repetitions": "6-10",
+    "instructions": "Hang from a bar with palms facing towards you, pull your body up until your chin is above the bar, and lower yourself back down.",
+    "image": "./workout_images/chin-ups.jpg"
+  },
+  {
+    "name": "Russian Twists",
+    "muscle": ["Obliques"],
+    "repetitions": "12-15",
+    "instructions": "Sit on the floor, lean back slightly, lift your feet off the ground, and twist your torso from side to side, touching the floor on each side.",
+    "image": "./workout_images/russian_twists.jpg"
+  },
+  {
+    "name": "Standing Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "15-20",
+    "instructions": "Stand with your toes on an elevated surface, rise up on your toes, and then lower your heels back down below the elevated surface.",
+    "image": "./workout_images/standing_calf_raises.jpg"
+  },
+  {
+    "name": "Tricep Pushdowns",
+    "muscle": ["Triceps"],
+    "repetitions": "10-15",
+    "instructions": "Stand in front of a cable machine with a rope attachment, grip the rope with palms facing down, extend your arms downward until your elbows are fully locked out, and then return to the starting position.",
+    "image": "./workout_images/tricep_pushdowns.jpg"
+  },
+  {
+    "name": "Wide Grip Pull-ups",
+    "muscle": ["Back", "Biceps"],
+    "repetitions": "6-10",
+    "instructions": "Hang from a bar with your hands wider than shoulder-width apart, pull your body up until your chin is above the bar, and lower yourself back down.",
+    "image": "./workout_images/wide_grip_pull-ups.jpg"
+  },
+  {
+    "name": "Leg Extensions",
+    "muscle": ["Quadriceps"],
+    "repetitions": "12-15",
+    "instructions": "Sit on a leg extension machine, place your shins behind the padded lever, extend your legs until they are straight, and then lower them back down.",
+    "image": "./workout_images/leg_extensions.jpg"
+  },
+  {
+    "name": "Incline Dumbbell Flyes",
+    "muscle": ["Chest"],
+    "repetitions": "8-12",
+    "instructions": "Lie on an incline bench with dumbbells in each hand, start with your arms extended out to the sides, lower the dumbbells in an arc motion until your upper arms are parallel to the floor, and then bring them back up.",
+    "image": "./workout_images/incline_dumbbell_flyes.jpg"
+  },
+  {
+    "name": "Russian Kettlebell Swings",
+    "muscle": ["Back", "Glutes", "Hamstrings"],
+    "repetitions": "10-15",
+    "instructions": "Stand with your feet shoulder-width apart, hold a kettlebell with both hands, hinge at the hips and swing the kettlebell between your legs, then drive your hips forward and swing the kettlebell up to chest level.",
+    "image": "./workout_images/russian_kettlebell_swings.jpg"
+  },
+  {
+    "name": "Lateral Raises",
+    "muscle": ["Shoulders"],
+    "repetitions": "10-12",
+    "instructions": "Stand with dumbbells in each hand, palms facing your body, raise your arms to the sides until they are parallel to the floor, and then lower them back down.",
+    "image": "./workout_images/lateral_raises.jpg"
+  },
+  {
+    "name": "Single-Leg Deadlifts",
+    "muscle": ["Back", "Hamstrings"],
+    "repetitions": "8-12",
+    "instructions": "Stand on one leg, hinge at the hips while keeping your back straight, extend the non-standing leg behind you for balance, lower your upper body until it's parallel to the floor, and then return to the starting position.",
+    "image": "./workout_images/single-leg_deadlifts.jpg"
+  },
+  {
+    "name": "Reverse Crunches",
+    "muscle": ["Abdominals"],
+    "repetitions": "12-15",
+    "instructions": "Lie on your back with your legs bent and lifted off the ground, bring your knees towards your chest while lifting your hips off the ground, and then slowly lower them back down.",
+    "image": "./workout_images/reverse_crunches.jpg"
+  },
+  {
+    "name": "Seated Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "15-20",
+    "instructions": "Sit on a calf raise machine, place your toes on the platform, lift your heels as high as possible, and then lower them back down.",
+    "image": "./workout_images/seated_calf_raises.jpg"
+  },
+  {
+    "name": "Mountain Climbers",
+    "muscle": ["Core"],
+    "repetitions": "20-30",
+    "instructions": "Start in a high plank position, bring one knee towards your chest, then quickly switch legs in a running motion, keeping your core engaged throughout the movement.",
+    "image": "./workout_images/mountain_climbers.jpg"
+  },
+  {
+    "name": "Reverse Grip Bent-Over Rows",
+    "muscle": ["Back", "Biceps"],
+    "repetitions": "8-12",
+    "instructions": "Bend over with your knees slightly bent and your back straight, grip the barbell with an underhand grip, pull the barbell towards your lower chest, and squeeze your shoulder blades together.",
+    "image": "./workout_images/reverse_grip_bent_over_rows.jpg"
+  },
+  {
+    "name": "Side Lateral Raises",
+    "muscle": ["Shoulders"],
+    "repetitions": "10-15",
+    "instructions": "Stand with dumbbells at your sides, raise your arms out to the sides until they are parallel to the floor, and then lower them back down.",
+    "image": "./workout_images/side_lateral_raises.jpg"
+  },
+  {
+    "name": "Bulgarian Split Squats",
+    "muscle": ["Legs"],
+    "repetitions": "8-12",
+    "instructions": "Stand in a split stance with one foot elevated behind you, lower your body by bending your front knee, and then push back up to the starting position.",
+    "image": "./workout_images/bulgarian_split_squats.jpg"
+  },
+  {
+    "name": "Close Grip Bench Press",
+    "muscle": ["Chest", "Triceps"],
+    "repetitions": "6-10",
+    "instructions": "Lie on a flat bench, grip the barbell with your hands closer than shoulder-width apart, lower the barbell to your lower chest, and press it back up.",
+    "image": "./workout_images/close_grip_bench_press.jpg"
+  },
+  {
+    "name": "Single-Leg Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "12-15",
+    "instructions": "Stand on one leg, rise up on your toes, and then lower your heel back down to the ground.",
+    "image": "./workout_images/single-leg_calf_raises.jpg"
+  },
+  {
+    "name": "Plank Jacks",
+    "muscle": ["Core"],
+    "repetitions": "15-20",
+    "instructions": "Start in a high plank position, jump your feet wide apart, and then quickly jump them back together.",
+    "image": "./workout_images/plank_jacks.jpg"
+  },
+  {
+    "name": "Hamstring Curls",
+    "muscle": ["Hamstrings"],
+    "repetitions": "10-12",
+    "instructions": "Lie face down on a hamstring curl machine, place your heels under the padded lever, curl your legs upward by flexing your knees, and then lower them back down.",
+    "image": "./workout_images/hamstring_curls.jpg"
+  },
+  {
+    "name": "Russian Twists",
+    "muscle": ["Obliques"],
+    "repetitions": "12-15",
+    "instructions": "Sit on the floor, lean back slightly, lift your feet off the ground, and twist your torso from side to side, touching the floor on each side.",
+    "image": "./workout_images/russian_twists.jpg"
+  },
+  {
+    "name": "Medicine Ball Slams",
+    "muscle": ["Full Body"],
+    "repetitions": "8-10",
+    "instructions": "Stand with your feet shoulder-width apart, hold a medicine ball with both hands overhead, forcefully slam the ball to the ground, and catch it on the rebound.",
+    "image": "./workout_images/medicine_ball_slams.jpg"
+  },
+  {
+    "name": "Flutter Kicks",
+    "muscle": ["Abdominals"],
+    "repetitions": "20-30",
+    "instructions": "Lie on your back with your legs extended, lift your legs slightly off the ground, and perform small, quick up-and-down movements with your legs.",
+    "image": "./workout_images/flutter_kicks.jpg"
+  },
+  {
+    "name": "Incline Dumbbell Curls",
+    "muscle": ["Biceps"],
+    "repetitions": "8-12",
+    "instructions": "Sit on an incline bench with dumbbells in each hand, let your arms hang by your sides, curl the dumbbells up towards your shoulders, and squeeze your biceps at the top.",
+    "image": "./workout_images/incline_dumbbell_curls.jpg"
+  },
+  {
+    "name": "T-Bar Rows",
+    "muscle": ["Back"],
+    "repetitions": "8-12",
+    "instructions": "Position yourself at the T-bar row machine, grab the handles with an overhand grip, pull the handles towards your torso, and squeeze your shoulder blades together.",
+    "image": "./workout_images/t-bar_rows.jpg"
+  },
+  {
+    "name": "Walking Lunges",
+    "muscle": ["Legs"],
+    "repetitions": "10-15",
+    "instructions": "Take a step forward with your right leg, lower your body until your right thigh is parallel to the floor, push off with your left foot, and repeat with the left leg in a walking motion.",
+    "image": "./workout_images/walking_lunges.jpg"
+  },
+  {
+    "name": "Decline Push-ups",
+    "muscle": ["Chest"],
+    "repetitions": "8-12",
+    "instructions": "Place your feet on an elevated surface and assume a push-up position, lower your chest towards the floor, and push yourself back up to the starting position.",
+    "image": "./workout_images/decline_push-ups.jpg"
+  },
+  {
+    "name": "Sumo Deadlifts",
+    "muscle": ["Back", "Glutes", "Hamstrings"],
+    "repetitions": "6-10",
+    "instructions": "Stand with your feet wider than shoulder-width apart, toes pointing outwards, hinge at the hips and grab the barbell with a wide grip, lower the barbell by bending your knees and hips, and then lift it by extending your hips and knees.",
+    "image": "./workout_images/sumo_deadlifts.jpg"
+  },
+  {
+    "name": "Seated Arnold Press",
+    "muscle": ["Shoulders"],
+    "repetitions": "10-12",
+    "instructions": "Sit on a bench with dumbbells in each hand, start with your palms facing your body at shoulder level, press the dumbbells overhead while rotating your palms forward, and then lower them back down while rotating your palms back.",
+    "image": "./workout_images/seated_arnold_press.jpg"
+  },
+  {
+    "name": "Step-ups with Knee Raise",
+    "muscle": ["Legs", "Core"],
+    "repetitions": "12-15",
+    "instructions": "Step onto a raised platform with your right foot, drive your left knee up towards your chest, step down with your left foot, and repeat the movement with the opposite leg.",
+    "image": "./workout_images/step-ups_with_knee_raise.jpg"
+  },
+  {
+    "name": "Chin-ups with Knee Raise",
+    "muscle": ["Back", "Biceps", "Core"],
+    "repetitions": "6-10",
+    "instructions": "Hang from a bar with an underhand grip, pull your body up until your chin is above the bar, and at the top of the movement, bring your knees towards your chest.",
+    "image": "./workout_images/chin-ups_with_knee_raise.jpg"
+  },
+  {
+    "name": "Russian Twists with Medicine Ball",
+    "muscle": ["Obliques", "Core"],
+    "repetitions": "12-15",
+    "instructions": "Sit on the floor with your knees bent, hold a medicine ball in front of your chest, lean back slightly, twist your torso to one side, tap the medicine ball on the floor, and then twist to the other side to tap the ball on the opposite side.",
+    "image": "./workout_images/russian_twists_with_medicine_ball.jpg"
+  },
+  {
+    "name": "Single-Leg Standing Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "15-20",
+    "instructions": "Stand on one leg with your other foot slightly off the ground, raise your heel as high as possible, pause briefly, and then lower it back down.",
+    "image": "./workout_images/single-leg_standing_calf_raises.jpg"
+  },
+  {
+    "name": "Hammer Curls",
+    "muscle": ["Biceps"],
+    "repetitions": "8-12",
+    "instructions": "Hold dumbbells with a neutral grip, curl them up while keeping your palms facing each other, and slowly lower them back down.",
+    "image": "./workout_images/hammer_curls.jpg"
+  },
+  {
+    "name": "Seated Rows",
+    "muscle": ["Back"],
+    "repetitions": "10-15",
+    "instructions": "Sit on a rowing machine, grab the handles with an overhand grip, pull them towards your torso, and squeeze your shoulder blades together.",
+    "image": "./workout_images/seated_rows.jpg"
+  },
+  {
+    "name": "Leg Press",
+    "muscle": ["Legs"],
+    "repetitions": "8-12",
+    "instructions": "Sit on a leg press machine, place your feet on the platform, push the platform away by extending your legs, and then bend your knees to return to the starting position.",
+    "image": "./workout_images/leg_press.jpg"
+  },
+  {
+    "name": "Incline Bench Press",
+    "muscle": ["Chest", "Shoulders"],
+    "repetitions": "6-10",
+    "instructions": "Lie on an incline bench, grip the barbell slightly wider than shoulder-width, lower it to your upper chest, and press it back up.",
+    "image": "./workout_images/incline_bench_press.jpg"
+  },
+  {
+    "name": "Romanian Deadlifts",
+    "muscle": ["Back", "Hamstrings"],
+    "repetitions": "8-12",
+    "instructions": "Hold a barbell with an overhand grip, stand with feet hip-width apart, hinge at the hips while keeping your back straight, lower the barbell by moving your hips back, and return to the starting position.",
+    "image": "./workout_images/romanian_deadlifts.jpg"
+  },
+  {
+    "name": "Arnold Press",
+    "muscle": ["Shoulders"],
+    "repetitions": "10-15",
+    "instructions": "Hold dumbbells at shoulder level, palms facing your body, press them upward while rotating your palms to face forward, and lower them back down while rotating your palms back.",
+    "image": "./workout_images/arnold_press.jpg"
+  },
+  {
+    "name": "Step-ups",
+    "muscle": ["Quadriceps", "Glutes"],
+    "repetitions": "12-15",
+    "instructions": "Stand in front of a step or platform, step onto it with one foot, push through your heel to lift your body up, and then step back down and repeat with the other leg.",
+    "image": "./workout_images/step-ups.jpg"
+  },
+  {
+    "name": "Chin-ups",
+    "muscle": ["Back", "Biceps"],
+    "repetitions": "6-10",
+    "instructions": "Hang from a bar with palms facing towards you, pull your body up until your chin is above the bar, and lower yourself back down.",
+    "image": "./workout_images/chin-ups.jpg"
+  },
+  {
+    "name": "Russian Twists",
+    "muscle": ["Obliques"],
+    "repetitions": "12-15",
+    "instructions": "Sit on the floor, lean back slightly, lift your feet off the ground, and twist your torso from side to side, touching the floor on each side.",
+    "image": "./workout_images/russian_twists.jpg"
+  },
+  {
+    "name": "Standing Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "15-20",
+    "instructions": "Stand with your toes on an elevated surface, rise up on your toes, and then lower your heels back down below the elevated surface.",
+    "image": "./workout_images/standing_calf_raises.jpg"
+  },
+  {
+    "name": "Tricep Pushdowns",
+    "muscle": ["Triceps"],
+    "repetitions": "10-15",
+    "instructions": "Stand in front of a cable machine with a rope attachment, grip the rope with palms facing down, extend your arms downward until your elbows are fully locked out, and then return to the starting position.",
+    "image": "./workout_images/tricep_pushdowns.jpg"
+  },
+  {
+    "name": "Wide Grip Pull-ups",
+    "muscle": ["Back", "Biceps"],
+    "repetitions": "6-10",
+    "instructions": "Hang from a bar with your hands wider than shoulder-width apart, pull your body up until your chin is above the bar, and lower yourself back down.",
+    "image": "./workout_images/wide_grip_pull-ups.jpg"
+  },
+  {
+    "name": "Leg Extensions",
+    "muscle": ["Quadriceps"],
+    "repetitions": "12-15",
+    "instructions": "Sit on a leg extension machine, place your shins behind the padded lever, extend your legs until they are straight, and then lower them back down.",
+    "image": "./workout_images/leg_extensions.jpg"
+  },
+  {
+    "name": "Incline Dumbbell Flyes",
+    "muscle": ["Chest"],
+    "repetitions": "8-12",
+    "instructions": "Lie on an incline bench with dumbbells in each hand, start with your arms extended out to the sides, lower the dumbbells in an arc motion until your upper arms are parallel to the floor, and then bring them back up.",
+    "image": "./workout_images/incline_dumbbell_flyes.jpg"
+  },
+  {
+    "name": "Russian Kettlebell Swings",
+    "muscle": ["Back", "Glutes", "Hamstrings"],
+    "repetitions": "10-15",
+    "instructions": "Stand with your feet shoulder-width apart, hold a kettlebell with both hands, hinge at the hips and swing the kettlebell between your legs, then drive your hips forward and swing the kettlebell up to chest level.",
+    "image": "./workout_images/russian_kettlebell_swings.jpg"
+  },
+  {
+    "name": "Lateral Raises",
+    "muscle": ["Shoulders"],
+    "repetitions": "10-12",
+    "instructions": "Stand with dumbbells in each hand, palms facing your body, raise your arms to the sides until they are parallel to the floor, and then lower them back down.",
+    "image": "./workout_images/lateral_raises.jpg"
+  },
+  {
+    "name": "Single-Leg Deadlifts",
+    "muscle": ["Back", "Hamstrings"],
+    "repetitions": "8-12",
+    "instructions": "Stand on one leg, hinge at the hips while keeping your back straight, extend the non-standing leg behind you for balance, lower your upper body until it's parallel to the floor, and then return to the starting position.",
+    "image": "./workout_images/single-leg_deadlifts.jpg"
+  },
+  {
+    "name": "Reverse Crunches",
+    "muscle": ["Abdominals"],
+    "repetitions": "12-15",
+    "instructions": "Lie on your back with your legs bent and lifted off the ground, bring your knees towards your chest while lifting your hips off the ground, and then slowly lower them back down.",
+    "image": "./workout_images/reverse_crunches.jpg"
+  },
+  {
+    "name": "Seated Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "15-20",
+    "instructions": "Sit on a calf raise machine, place your toes on the platform, lift your heels as high as possible, and then lower them back down.",
+    "image": "./workout_images/seated_calf_raises.jpg"
+  },
+  {
+    "name": "Mountain Climbers",
+    "muscle": ["Core"],
+    "repetitions": "20-30",
+    "instructions": "Start in a high plank position, bring one knee towards your chest, then quickly switch legs in a running motion, keeping your core engaged throughout the movement.",
+    "image": "./workout_images/mountain_climbers.jpg"
+  },
+  {
+    "name": "Dumbbell Lunges",
+    "muscle": ["Legs"],
+    "repetitions": "10-12",
+    "instructions": "Hold a dumbbell in each hand, step forward with one leg and lower your body until your front knee is bent at a 90-degree angle, then push off with your front foot and return to the starting position.",
+    "image": "./workout_images/dumbbell_lunges.jpg"
+  },
+  {
+    "name": "Bent-Over Dumbbell Rows",
+    "muscle": ["Back"],
+    "repetitions": "8-10",
+    "instructions": "Bend your knees slightly and hinge forward at the hips, hold dumbbells with your arms fully extended, pull the dumbbells towards your torso by retracting your shoulder blades, and then lower them back down.",
+    "image": "./workout_images/bent-over_dumbbell_rows.jpg"
+  },
+  {
+    "name": "Push-up Variations",
+    "muscle": ["Chest", "Triceps", "Shoulders"],
+    "repetitions": "10-15",
+    "instructions": "Assume a plank position with your hands slightly wider than shoulder-width apart, lower your chest towards the floor by bending your elbows, and then push back up to the starting position.",
+    "image": "./workout_images/push-up_variations.jpg"
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "muscle": ["Shoulders"],
+    "repetitions": "8-12",
+    "instructions": "Sit on a bench with dumbbells in each hand, start with your palms facing forward and dumbbells at shoulder level, press the dumbbells upward until your arms are fully extended, and then lower them back down.",
+    "image": "./workout_images/dumbbell_shoulder_press.jpg"
+  },
+  {
+    "name": "Single-Leg Glute Bridge",
+    "muscle": ["Glutes", "Hamstrings"],
+    "repetitions": "12-15",
+    "instructions": "Lie on your back with your knees bent and feet flat on the ground, lift one leg off the ground, push through the heel of the other foot to raise your hips off the ground, and then lower your hips back down.",
+    "image": "./workout_images/single-leg_glute_bridge.jpg"
+  },
+  {
+    "name": "Hanging Leg Raises",
+    "muscle": ["Abdominals"],
+    "repetitions": "10-12",
+    "instructions": "Hang from a pull-up bar with your arms fully extended, engage your core, and lift your legs until they are parallel to the floor, then slowly lower them back down.",
+    "image": "./workout_images/hanging_leg_raises.jpg"
+  },
+  {
+    "name": "Seated Calf Raises",
+    "muscle": ["Calves"],
+    "repetitions": "15-20",
+    "instructions": "Sit on a calf raise machine with your toes on the platform, raise your heels as high as possible, and then lower them back down.",
+    "image": "./workout_images/seated_calf_raises.jpg"
+  },
+  {
+    "name": "Russian Twists",
+    "muscle": ["Obliques", "Core"],
+    "repetitions": "12-15",
+    "instructions": "Sit on the floor with your knees bent and feet lifted off the ground, twist your torso to one side, touch the floor with your hands, and then twist to the other side to touch the floor.",
+    "image": "./workout_images/russian_twists.jpg"
+  },
+  {
+    "name": "Burpees",
+    "muscle": ["Full Body"],
+    "repetitions": "10-12",
+    "instructions": "Start in a standing position, lower into a squat, place your hands on the ground in front of you, kick your feet back to a plank position, perform a push-up, jump your feet back to your hands, and explosively jump up into the air.",
+    "image": "./workout_images/burpees.jpg"
+  },
+  {
+    "name": "Plank",
+    "muscle": ["Core"],
+    "repetitions": "30-60 seconds",
+    "instructions": "Assume a push-up position but with your forearms on the ground, engage your core and hold the position, keeping your body in a straight line from head to heels.",
+    "image": "./workout_images/plank.jpg"
+  }
 ]

@@ -19,7 +19,8 @@ function BMR() {
   const [userBMR, setUserBMR] = useState("");
   const navigate = useNavigate();
 
-  const handleButtonChange = (value) => {
+  const handleButtonChange = (value, e) => {
+    //e.preventDefault();
     switch (value) {
       case "kgs":
         setIsKG(true);
@@ -49,6 +50,7 @@ function BMR() {
   };
 
   const handleChange = (e) => {
+    console.log("user: ", user);
     const { name, value } = e.target;
     setInput((prev) => ({ ...prev, [name]: value }));
   };
@@ -83,8 +85,11 @@ function BMR() {
       13.75 * parseFloat(weight) +
       5.003 * parseFloat(height) -
       6.755 * parseFloat(input.age);
+    //Need actual input validation here, cause this is spicy
     setUserBMR(Math.floor(bmr));
     updateUser();
+    //navigate("/Questionaire");
+
     e.preventDefault();
   };
 
@@ -140,13 +145,13 @@ function BMR() {
         <div>
           <button
             className={`${isKG ? "active" : ""}`}
-            onClick={() => handleButtonChange("kgs")}
+            onClick={(e) => handleButtonChange("kgs")}
           >
             kgs
           </button>
           <button
             className={`${isLB ? "active" : ""}`}
-            onClick={() => handleButtonChange("lbs")}
+            onClick={(e) => handleButtonChange("lbs")}
           >
             lbs
           </button>
@@ -162,13 +167,13 @@ function BMR() {
         <div>
           <button
             className={`${isCM ? "active" : ""}`}
-            onClick={() => handleButtonChange("cm")}
+            onClick={(e) => handleButtonChange("cm")}
           >
             cm
           </button>
           <button
             className={`${isFT ? "active" : ""}`}
-            onClick={() => handleButtonChange("ft")}
+            onClick={(e) => handleButtonChange("ft")}
           >
             ft/in
           </button>
@@ -214,13 +219,13 @@ function BMR() {
         <div>
           <button
             className={`${isMale ? "active" : ""}`}
-            onClick={() => handleButtonChange("male")}
+            onClick={(e) => handleButtonChange("male")}
           >
             male
           </button>
           <button
             className={`${isFemale ? "active" : ""}`}
-            onClick={() => handleButtonChange("female")}
+            onClick={(e) => handleButtonChange("female")}
           >
             female
           </button>

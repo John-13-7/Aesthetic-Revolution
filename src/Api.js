@@ -17,7 +17,7 @@ app.use((req, res, next) => {
   next();
 });
 
-//get users
+//load users
 let users = [];
 fs.readFile("./src/Data/Users.json", "utf8", (err, data) => {
   if (err) {
@@ -27,13 +27,43 @@ fs.readFile("./src/Data/Users.json", "utf8", (err, data) => {
   }
 });
 
-//reads current user
+//load meals
+let meals = [];
+fs.readFile("./src/Data/Meals.json", "utf8", (err, data) => {
+  if (err) {
+    return res.status(500).json({ error: "Error reading Meals.json" });
+  } else {
+    meals = JSON.parse(data);
+  }
+});
+
+//load exercises
+let exercises = [];
+fs.readFile("./src/Data/Exercises.json", "utf8", (err, data) => {
+  if (err) {
+    return res.status(500).json({ error: "Error reading Exercises.json" });
+  } else {
+    exercises = JSON.parse(data);
+  }
+});
+
+//get meals
+app.get("/Meals", (req, res) => {
+  res.json(meals);
+});
+
+//get exercises
+app.get("/Exercises", (req, res) => {
+  res.json(exercises);
+});
+
+//get current user
 let current_user = "";
 app.get("/Users/current", (req, res) => {
   fs.readFile("./src/Data/CurrentUser.json", "utf8", (err, data) => {
     if (err) {
       console.error("Error reading the file", err);
-      return res.status(500).json({ error: "Error reading file" });
+      return res.status(500).json({ error: "Error reading CurrentUser.json" });
     } else {
       current_user = JSON.parse(data);
     }
@@ -124,7 +154,7 @@ app.post("/Users/register", async (req, res) => {
   );
 });
 
-//return currently logged in
+//return user that's logged in
 app.get("/Users/CurrentUser", (req, res) => {
   fs.readFile("./src/Data/CurrentUser.json", "utf8", (err, data) => {
     if (err) {
@@ -134,6 +164,17 @@ app.get("/Users/CurrentUser", (req, res) => {
       res.json(current_user);
     }
   });
+});
+
+//return user detail
+app.get("/Users/CurrentUser/details", (req, res) => {
+  const user = users.find((user) => user.name === current_user);
+  console.log("user: ", user);
+  if (user) {
+    res.json(user);
+  } else {
+    res.status(404).json({ success: false, message: "User not found" });
+  }
 });
 
 //update the users BMR
@@ -173,6 +214,7 @@ app.put("/Users/CurrentUser/BMR", (req, res) => {
   }
 });
 
+//update the users questionaire
 app.put("/Users/CurrentUser/Questionaire", (req, res) => {
   const {
     goals,

@@ -37,7 +37,7 @@ function Nav() {
       <StyledLink to="/BMR">BMR</StyledLink>
       <StyledLink to="/Exercises">Exercises</StyledLink>
       <StyledLink to="/Meals">Meals</StyledLink>
-
+      <StyledLink to="/Questionaire">Questionaire</StyledLink>
       {!isLoggedIn ? (
         <StyledLink to="/Login">Login</StyledLink>
       ) : (

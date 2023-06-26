@@ -3,7 +3,7 @@
     "name": "meow",
     "password": "$2b$10$.QXF2DmLMp91gN9cMug/gurAzMvtyXtoAjBmZUwK0T6rCrA2CuYdC",
     "email": "meow@gmail.com",
-    "bmr": 0,
+    "bmr": "",
     "goals": "",
     "bulkpounds": "",
     "cutpounds": "",
@@ -20,17 +20,38 @@
     "name": "yes",
     "password": "$2b$10$08/zTFpfdg/sOQLoYizqfu0vX34U1.pOxAhrqWWckSWHdU5Yv0Uju",
     "email": "yes@gmail.com",
-    "bmr": 799,
-    "goals": "cut",
-    "bulkpounds": "",
-    "cutpounds": 2,
-    "ismeal": true,
+    "bmr": "",
+    "goals": "bulk",
+    "bulkpounds": 2,
+    "cutpounds": "",
+    "ismeal": false,
     "foodallergies": [],
-    "foodtypes": "none",
+    "foodtypes": "",
     "istrain": "yes",
     "trainingdays": 5,
     "trainingfocus": [
-      "triceps"
+      "quads"
+    ],
+    "mealplan": [],
+    "workoutplan": []
+  },
+  {
+    "name": "bk",
+    "password": "$2b$10$OflR4FRJTaU6pq2WjbtmMurj04Fj7Pn95TE.JTRRRWC5HvyjP8afq",
+    "email": "bk@gmail.com",
+    "bmr": "",
+    "goals": "bulk",
+    "bulkpounds": 3,
+    "cutpounds": "",
+    "ismeal": true,
+    "foodallergies": [
+      "milk"
+    ],
+    "foodtypes": "vegetarian",
+    "istrain": "yes",
+    "trainingdays": 5,
+    "trainingfocus": [
+      "calves"
     ],
     "mealplan": [],
     "workoutplan": []
