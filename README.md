@@ -1,5 +1,8 @@
 # Aesthetikz
 
+##Installing
+npm install node bcypt 
+
 ## Versions
 
 ### 1.0 
